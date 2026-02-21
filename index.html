@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lviv Lions - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="Lviv Lions Logo">
+                </div>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">ЛЬВІВСЬКІ ЛЕВИ</span>
+                    <span class="logo-tagline">Флеґ-футбол у Львові</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#about">ПРО КОМАНДУ</a></li>
+                    <li><a href="#flag-football">ФЛЕГ-ФУТБОЛ</a></li>
+                    <li><a href="#practice-locations">ТРЕНУВАННЯ</a></li>
+                    <li><a href="#gallery">МЕДІА</a></li>
+                    <li><a href="#contact">КОНТАКТИ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="feed" class="feed feed-first">
+        <div class="container">
+            <div class="feed-grid">
+                <a href="https://instagram.com/lvivlions" target="_blank"
+                    class="feed-item feed-item-large instagram-tile">
+                    <div class="instagram-header">
+                        <div class="instagram-profile">
+                            <div class="instagram-avatar">
+                                <img src="assets/iglogo.jpg" alt="Lviv Lions">
+                            </div>
+                            <div class="instagram-info">
+                                <span class="instagram-username">lvivlions</span>
+                                <span class="instagram-location">Lviv, Ukraine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-image instagram-post-image">
+                        <video autoplay muted loop playsinline class="instagram-video">
+                            <source src="assets/ig-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </a>
+                <a href="#team-male" class="feed-item team-link male-team-tile">
+                    <div class="feed-image team-image male-team"
+                        style="background-image: url('assets/men-team.jpg'); background-size: cover; background-position: center top;">
+                        <div class="team-text-overlay">
+                            <h3 class="team-title">ЧОЛОВІЧА КОМАНДА</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#team-female" class="feed-item team-link female-team-tile">
+                    <div class="feed-image team-image female-team"
+                        style="background-image: url('assets/womens.png'); background-size: cover; background-position: left top;">
+                        <div class="team-text-overlay">
+                            <h3 class="team-title">ЖІНОЧА КОМАНДА</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://youtube.com/@lvivlionsfootball/videos" target="_blank"
+                    class="feed-item team-link youtube-tile">
+                    <div class="feed-image team-image youtube-bg"
+                        style="background-image: url('assets/youtube.jpg'); background-size: cover; background-position: center;">
+                        <div class="team-text-overlay">
+                            <h3 class="team-title">YOUTUBE</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#flag-football" class="feed-item team-link flag-football-tile">
+                    <div class="feed-image team-image flag-football-bg"
+                        style="background-image: url('assets/flag.png'); background-size: 110%; background-position: right top; background-repeat: no-repeat;">
+                        <div class="team-text-overlay">
+                            <h3 class="team-title">ФЛЕГ ФУТБОЛ</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="about-header__title">ПРО КОМАНДУ</h2>
+            </div>
+
+            <div class="about-content-simple">
+                <div class="about-story">
+                    <p class="about-story__text">
+                        Львівські Леви — це більше ніж команда. Ми — спільнота, яка об'єднує людей різного віку та
+                        досвіду навколо любові до флег-футболу. Наша місія — розвивати цей динамічний вид спорту у
+                        Львові та створювати можливості для кожного, хто хоче стати частиною чогось великого.
+                    </p>
+                    <p class="about-story__text">
+                        Ми віримо, що спорт — це не лише фізична активність, а й спосіб розвитку характеру, дисципліни
+                        та командного духу. Кожне тренування — це крок до досконалості, кожна гра — це можливість
+                        проявити себе.
+                    </p>
+                </div>
+
+                <ul class="about-list">
+                    <li class="about-list__item">
+                        <span class="about-list__text"><strong>Сучасна інфраструктура</strong><br>Тренування проходять
+                            на якісних майданчиках із необхідним обладнанням, що відповідає сучасним стандартам
+                            підготовки.</span>
+                    </li>
+                    <li class="about-list__item">
+                        <span class="about-list__text"><strong>Досвідчені тренери</strong><br>З вами працюють фахівці з
+                            практичним і змагальним досвідом, які системно розвивають техніку, тактику та фізичну
+                            підготовку гравців.</span>
+                    </li>
+                    <li class="about-list__item">
+                        <span class="about-list__text"><strong>Національні та міжнародні змагання</strong><br>Ми
+                            регулярно беремо участь у турнірах в Україні та за кордоном, отримуючи досвід гри проти
+                            сильних суперників.</span>
+                    </li>
+                    <li class="about-list__item">
+                        <span class="about-list__text"><strong>Дружня командна атмосфера</strong><br>Команда — це
+                            підтримка, взаємоповага та спільна мета. Ми формуємо середовище, де кожен може розкрити свій
+                            потенціал.</span>
+                    </li>
+                    <li class="about-list__item">
+                        <span class="about-list__text"><strong>Розвиток фізичних та атлетичних
+                                навичок</strong><br>Флег-футбол допомагає покращити швидкість, координацію,
+                            витривалість, реакцію та стратегічне мислення у форматі командного спорту.</span>
+                    </li>
+                    <li class="about-list__item">
+                        <span class="about-list__text"><strong>Олімпійський вид спорту</strong><br>Флег-футбол — це
+                            безконтактна версія американського футболу, який включено до програми Олімпійських ігор, що
+                            відкриває нові можливості для розвитку та міжнародних перспектив.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="practice-locations" id="practice-locations">
+                <h3 class="practice-locations__title">Локації тренувань</h3>
+                <div class="practice-locations__grid">
+                    <div class="practice-location__card">
+                        <div class="practice-location__image" style="background-image: url('assets/unist.png');"></div>
+                        <div class="practice-location__info">
+                            <div class="practice-location__name">Стадіон "Юність"</div>
+                            <div class="practice-location__time">Літній час</div>
+                        </div>
+                    </div>
+                    <div class="practice-location__card">
+                        <div class="practice-location__image" style="background-image: url('assets/ska.png');"></div>
+                        <div class="practice-location__info">
+                            <div class="practice-location__name">Атлетичний манеж СКА</div>
+                            <div class="practice-location__time">Середа 19:30 (зимовий час)</div>
+                        </div>
+                    </div>
+                    <div class="practice-location__card">
+                        <div class="practice-location__image" style="background-image: url('assets/sokil.png');"></div>
+                        <div class="practice-location__info">
+                            <div class="practice-location__name">Стадіон Сокіл</div>
+                            <div class="practice-location__time">Неділя 12:00</div>
+                        </div>
+                    </div>
+                    <div class="practice-location__card">
+                        <div class="practice-location__image"
+                            style="background-image: url('assets/differ1.png'); background-position: center 30%;">
+                        </div>
+                        <div class="practice-location__info">
+                            <div class="practice-location__name">Фітнес клуб differ sport</div>
+                            <div class="practice-location__time">Четвер 21:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-cta">
+                <a href="#contact" class="about-cta__button">Приєднатися до команди</a>
+            </div>
+
+            <div class="about-social">
+                <span class="about-social__text">Підписуйся на Instagram</span>
+                <a href="https://instagram.com/lvivlions" target="_blank" class="about-social__link">
+                    <svg class="about-social__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    @lvivlions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="team-male" class="team-section team-male">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="about-header__title">ЧОЛОВІЧА КОМАНДА</h2>
+            </div>
+
+            <div class="team-photos">
+                <div class="team-photos__item" style="background-image: url('assets/mans1.png');"></div>
+                <div class="team-photos__item" style="background-image: url('assets/mans2.png');"></div>
+            </div>
+
+            <div class="team-content">
+                <h3 class="team-content__title">Чоловіча команда (заснована 2011)</h3>
+                <p class="team-content__text">Заснована у 2011 році, чоловіча команда стабільно демонструє високий
+                    рівень гри та конкурентний характер. Ми — багаторазові переможці та призери всеукраїнських і
+                    міжнародних турнірів, команда, яка ставить амбітні цілі на кожен сезон і працює на результат. Наша
+                    філософія — дисципліна, швидкість, тактика та постійний розвиток. Ми системно тренуємося і будуємо
+                    гру навколо командної взаємодії.</p>
+            </div>
+
+            <div class="about-cta">
+                <a href="#contact" class="about-cta__button">Приєднатися до команди</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="team-female" class="team-section team-female">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="about-header__title">ЖІНОЧА КОМАНДА</h2>
+            </div>
+
+            <div class="team-photos">
+                <div class="team-photos__item"
+                    style="background-image: url('assets/womens3.png'); background-position: 74% center;"></div>
+                <div class="team-photos__item"
+                    style="background-image: url('assets/miya1.png'); background-position: 74% center;"></div>
+            </div>
+
+            <div class="team-content">
+                <h3 class="team-content__title">Жіноча команда (заснована 2020)</h3>
+                <p class="team-content__text">Жіноча команда створена у 2020 році та активно розвивається, формуючи
+                    конкурентний склад. Ми прагнемо досягати результатів на національному та міжнародному рівні,
+                    розвиваючи флег-футбол і підвищуючи рівень кожної гравчині. Команда поєднує швидкість, стратегію та
+                    згуртованість, створюючи середовище для росту й прогресу.</p>
+            </div>
+
+            <div class="about-cta">
+                <a href="#contact" class="about-cta__button">Приєднатися до команди</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="old-about-backup" class="about" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">WHO WE ARE</span>
+                <h2 class="section-title">ABOUT THE CLUB</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="mission-title">Our Mission</h3>
+                    <p class="mission-statement">Lviv Lions is dedicated to fostering athletic excellence, building
+                        character, and creating champions both on and off the field. We unite passion, discipline, and
+                        community spirit to develop well-rounded athletes who embody the highest standards of
+                        sportsmanship.</p>
+                    <div class="brand-colors">
+                        <div class="color-item">
+                            <div class="color-swatch" style="background: #D4AF37;"></div>
+                            <span class="color-name">Gold</span>
+                            <span class="color-code">#D4AF37</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background: #0a0a0a;"></div>
+                            <span class="color-name">Black</span>
+                            <span class="color-code">#0A0A0A</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background: #ffffff;"></div>
+                            <span class="color-name">White</span>
+                            <span class="color-code">#FFFFFF</span>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Active</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Trophies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" />
+                            <path d="M50 20L60 45H75L63 55L68 80L50 65L32 80L37 55L25 45H40L50 20Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">МЕДІА</h2>
+            </div>
+            <div class="gallery-content">
+                <div class="gallery-tab-content active" id="photos">
+                    <div class="gallery-grid">
+                        <div class="gallery-item" style="background-image: url('assets/gallery1.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('assets/gallery2.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('assets/gallery3.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('assets/gallery4.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('assets/gallery5.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('assets/gallery6.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('assets/gallery7.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('assets/gallery8.png');">
+                            <div class="gallery-overlay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="gallery-tab-content" id="videos">
+        <div class="video-grid">
+            <div class="video-item">
+                <div class="video-thumbnail">
+                    <div class="play-button">▶</div>
+                </div>
+                <h4 class="video-title">Championship Highlights</h4>
+                <p class="video-duration">5:24</p>
+            </div>
+            <div class="video-item">
+                <div class="video-thumbnail">
+                    <div class="play-button">▶</div>
+                </div>
+                <h4 class="video-title">Behind the Scenes</h4>
+                <p class="video-duration">3:45</p>
+            </div>
+            <div class="video-item">
+                <div class="video-thumbnail">
+                    <div class="play-button">▶</div>
+                </div>
+                <h4 class="video-title">Player Interviews</h4>
+                <p class="video-duration">8:12</p>
+            </div>
+            <div class="video-item">
+                <div class="video-thumbnail">
+                    <div class="play-button">▶</div>
+                </div>
+                <h4 class="video-title">Training Sessions</h4>
+                <p class="video-duration">4:30</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ПАРТНЕРИ ТА СПОНСОРИ</h2>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-logo">
+                    <img src="assets/noltic.png" alt="Noltic">
+                </div>
+                <div class="sponsor-logo">
+                    <img src="assets/bandit.png" alt="Bandit">
+                </div>
+                <div class="sponsor-logo">
+                    <img src="assets/differ.png" alt="Differ">
+                </div>
+                <div class="sponsor-logo">
+                    <img src="assets/nazhyvo.png" alt="Nazhyvo">
+                </div>
+                <div class="sponsor-logo">
+                    <img src="assets/lionkup.png" alt="Lion Kup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact contact-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">КОНТАКТИ</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Адреса</h4>
+                                <p>Львів, стадіон "Юність"<br>вул. Болгарська 4</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+380632426495</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>lvivlions.contact@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/lvivlions" target="_blank"
+                                class="social-icon social-icon-large" aria-label="Instagram">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <circle cx="12" cy="12" r="4" fill="#0a0a0a" />
+                                    <circle cx="18" cy="6" r="1.5" />
+                                </svg>
+                            </a>
+                            <a href="https://youtube.com/@lvivlionsfootball/videos" target="_blank"
+                                class="social-icon social-icon-large" aria-label="YouTube">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" />
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#0a0a0a" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Тема">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше повідомлення" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">НАДІСЛАТИ ПОВІДОМЛЕННЯ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <h3>LVIV LIONS</h3>
+                <p>&copy; 2026 Lviv Lions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

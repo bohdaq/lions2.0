@@ -1,0 +1,55 @@
+/* ============================================
+   LARGE SOCIAL ICONS - Instagram & YouTube
+   ============================================ */
+
+.social-icon-large {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 255, 0, 0.3);
+    border-radius: 50%;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon-large::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.social-icon-large:hover {
+    transform: scale(1.15) rotate(5deg);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.social-icon-large:hover::before {
+    opacity: 1;
+}
+
+.social-icon-large svg {
+    position: relative;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.social-icon-large:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.8));
+}
+
+.social-icons {
+    gap: 2rem;
+}

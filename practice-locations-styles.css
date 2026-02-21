@@ -1,0 +1,105 @@
+/* ============================================
+   PRACTICE LOCATIONS - Training Venues
+   ============================================ */
+
+.practice-locations {
+    margin: 4rem 0 3rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.practice-locations__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0 0 2.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+    .practice-locations__title {
+        font-size: 1.8rem;
+        margin: 0 0 3rem 0;
+    }
+}
+
+.practice-locations__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .practice-locations__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.practice-location__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.practice-location__card:hover {
+    transform: translateY(-5px);
+}
+
+.practice-location__image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 255, 0, 0.3);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .practice-location__image {
+        height: 220px;
+    }
+}
+
+.practice-location__image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 50%);
+    transition: var(--transition);
+}
+
+.practice-location__card:hover .practice-location__image {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(0, 255, 0, 0.3);
+}
+
+.practice-location__card:hover .practice-location__image::before {
+    background: linear-gradient(to top, rgba(0, 255, 0, 0.3) 0%, transparent 50%);
+}
+
+.practice-location__name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .practice-location__name {
+        font-size: 0.95rem;
+    }
+}
