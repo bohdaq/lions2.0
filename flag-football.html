@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флег-футбол - Львівські Леви</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Override styles for minimalistic white design */
+        body {
+            background: #ffffff;
+        }
+
+        .header {
+            background: #ffffff !important;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo-text {
+            color: #1a1a1a;
+        }
+
+        .logo-tagline {
+            color: #666666;
+        }
+
+        .nav-menu a {
+            color: #1a1a1a;
+        }
+
+        .nav-menu a:hover {
+            color: #666666;
+        }
+
+        .flag-football-page {
+            background: #ffffff;
+            padding: 8rem 0 4rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .flag-football-page {
+                padding: 6rem 0 4rem 0;
+            }
+        }
+
+        .page-title {
+            color: #1a1a1a;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .page-subtitle {
+            color: #666666;
+            font-size: 1rem;
+        }
+
+        .rule-tile {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .rule-tile:hover {
+            border-color: #cccccc;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 968px) {
+            .rule-tile {
+                gap: 3rem;
+            }
+        }
+
+        .rule-tile__title {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .rule-tile__text {
+            color: #333333;
+            line-height: 1.8;
+        }
+
+        .rules-tiles {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .rule-tile__media {
+            height: 100%;
+            min-height: 400px;
+            overflow: hidden;
+        }
+
+        @media (min-width: 968px) {
+            .rule-tile__media {
+                min-height: 450px;
+            }
+        }
+
+        .rule-tile__content {
+            padding: 2rem 2rem 2rem 3rem;
+        }
+
+        @media (min-width: 968px) {
+            .rule-tile__content {
+                padding: 3rem 3rem 3rem 4rem;
+            }
+        }
+
+        .rule-tile__video {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+        }
+
+        .rule-tile__placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f5f5;
+            color: #999999;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer {
+            background: #f8f8f8;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-simple h3 {
+            color: #1a1a1a;
+        }
+
+        .footer-simple p {
+            color: #666666;
+        }
+
+        .hamburger span {
+            background: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="Lviv Lions Logo">
+                </div>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">ЛЬВІВСЬКІ ЛЕВИ</span>
+                    <span class="logo-tagline">Флеґ-футбол у Львові</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html#about">ПРО КОМАНДУ</a></li>
+                    <li><a href="flag-football.html">ФЛЕГ-ФУТБОЛ</a></li>
+                    <li><a href="index.html#practice-locations">ТРЕНУВАННЯ</a></li>
+                    <li><a href="index.html#gallery">МЕДІА</a></li>
+                    <li><a href="index.html#contact">КОНТАКТИ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="flag-football-page">
+        <div class="container">
+            <div class="rules-tiles">
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <video class="rule-tile__video" autoplay loop muted playsinline>
+                            <source src="assets/catch-top.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео.
+                        </video>
+                    </div>
+                    <div class="rule-tile__content">
+                        <h2 class="rule-tile__title">Що таке флег-футбол?</h2>
+                        <p class="rule-tile__text">
+                            Флег-футбол — це швидка безконтактна версія американського футболу. Замість силових прийомів
+                            гравця зупиняють, зірвавши прапорець з його пояса.
+                        </p>
+                        <p class="rule-tile__text">
+                            Вид спорту стрімко розвивається у світі та офіційно включений до програми Олімпійських ігор
+                            (Лос-Анджелес 2028). Швидкість, безпечність і доступність роблять його одним із
+                            найдинамічніших командних видів спорту сьогодня.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                    </div>
+                    <div class="rule-tile__content">
+                        <h2 class="rule-tile__title">Формат гри</h2>
+                        <p class="rule-tile__text">
+                            <strong>5 на 5 гравців</strong>
+                        </p>
+                        <p class="rule-tile__text">
+                            Дві половини (турнірний формат: 2 × 20 хвилин)
+                        </p>
+                        <p class="rule-tile__text">
+                            Годинник зупиняється лише на перерві, тайм-аутах або травмах
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                    </div>
+                    <div class="rule-tile__content">
+                        <h2 class="rule-tile__title">Основні правила</h2>
+                        <p class="rule-tile__text">
+                            <strong>Мінімальний контакт</strong>
+                        </p>
+                        <p class="rule-tile__text">
+                            Заборонені удари, пірнання з м'ячем і блокування суперника
+                        </p>
+                        <p class="rule-tile__text">
+                            Розіграш завершується після зриву прапорця
+                        </p>
+                        <p class="rule-tile__text">
+                            Квотербек не може перетинати лінію розіграшу з м'ячем
+                        </p>
+                        <p class="rule-tile__text">
+                            Лише 1 пас вперед за розіграш
+                        </p>
+                        <p class="rule-tile__text">
+                            Пас вперед має бути спійманий за лінією розіграшу
+                        </p>
+                        <p class="rule-tile__text">
+                            Необмежені передачі назад за лінією розіграшу
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                    </div>
+                    <div class="rule-tile__content">
+                        <h2 class="rule-tile__title">Спроби та набір очок</h2>
+                        <p class="rule-tile__text">
+                            Атака починає зі своєї 5-ярдової лінії
+                        </p>
+                        <p class="rule-tile__text">
+                            4 спроби, щоб перейти центр поля
+                        </p>
+                        <p class="rule-tile__text">
+                            Після перетину центру — 4 спроби для занесення тачдауну
+                        </p>
+                        <p class="rule-tile__text">
+                            <strong>Тачдаун — 6 очок</strong>
+                        </p>
+                        <p class="rule-tile__text">
+                            <strong>Реалізація:</strong><br>
+                            1 очко з 5 ярдів<br>
+                            2 очки з 10 ярдів
+                        </p>
+                        <p class="rule-tile__text">
+                            Сейфті (зрив прапорця з гравця у власній заліковій зоні) — 2 очки
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <video class="rule-tile__video" autoplay loop muted playsinline>
+                            <source src="assets/run-square.mp4?v=2" type="video/mp4">
+                            Ваш браузер не підтримує відео.
+                        </video>
+                    </div>
+                    <div class="rule-tile__content">
+                        <h2 class="rule-tile__title">Правила бігу</h2>
+                        <p class="rule-tile__text">
+                            Заборонено стрибати або пірнати, щоб уникнути зриву прапорця, проте дозволено ухилятися
+                        </p>
+                        <p class="rule-tile__text">
+                            Оберт (spin) дозволений
+                        </p>
+                        <p class="rule-tile__text">
+                            <strong>Зони без бігу:</strong> 5 ярдів перед ендзоною та біля центру поля
+                        </p>
+                        <p class="rule-tile__text">
+                            Кінець розіграшу визначається положенням м'яча в момент зриву прапорця
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <video class="rule-tile__video" autoplay loop muted playsinline>
+                            <source src="assets/catchm-square.mp4?v=2" type="video/mp4">
+                            Ваш браузер не підтримує відео.
+                        </video>
+                    </div>
+                    <div class="rule-tile__content">
+                        <h2 class="rule-tile__title">Правила пасу</h2>
+                        <p class="rule-tile__text">
+                            Квотербек має 7 секунд на виконання передачі
+                        </p>
+                        <p class="rule-tile__text">
+                            Перехоплення м'яча захистом можна повертати
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                    </div>
+                    <div class="rule-tile__content">
+                        <h2 class="rule-tile__title">Пресинг на квотербека</h2>
+                        <p class="rule-tile__text">
+                            1 або 2 призначені гравці можуть виконувати пресинг
+                        </p>
+                        <p class="rule-tile__text">
+                            Стартують за 7 ярдів від лінії розіграшу
+                        </p>
+                        <p class="rule-tile__text">
+                            Після передачі назад усі захисники можуть атакувати
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <h3>LVIV LIONS</h3>
+                <p>&copy; 2026 Lviv Lions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
