@@ -199,6 +199,46 @@ html {
     width: 80%;
 }
 
+.lang-switcher {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid transparent;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-btn:hover {
+    border-color: var(--primary-green);
+}
+
+.lang-btn.active {
+    border-color: var(--primary-green);
+    background: rgba(57, 255, 20, 0.1);
+}
+
+.flag-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}
+
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -2373,6 +2413,7 @@ section {
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9);
     margin: 0 0 1.5rem 0;
+    text-align: justify;
 }
 
 .about-story__text:last-child {
@@ -2861,46 +2902,30 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(0, 255, 0, 0.3);
     border-radius: 50%;
-    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-light);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.social-icon-large::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle, rgba(0, 255, 0, 0.2) 0%, transparent 70%);
-    opacity: 0;
-    transition: var(--transition);
-}
-
 .social-icon-large:hover {
-    transform: scale(1.15) rotate(5deg);
-    border-color: var(--primary-color);
-    box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
-    background: rgba(0, 255, 0, 0.1);
-}
-
-.social-icon-large:hover::before {
-    opacity: 1;
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .social-icon-large svg {
     position: relative;
     z-index: 1;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
 .social-icon-large:hover svg {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.8));
+    transform: scale(1.05);
 }
 
 .social-icons {
@@ -3032,7 +3057,9 @@ section {
     .practice-location__time {
         font-size: 0.85rem;
     }
-}/* ============================================
+}
+
+/* ============================================
    SIMPLIFIED FOOTER
    ============================================ */
 
@@ -3056,6 +3083,7 @@ section {
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
 }
+
 /* ============================================
    FLAG FOOTBALL RULES PAGE
    ============================================ */
@@ -3402,6 +3430,7 @@ section {
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 255, 0, 0.4);
 }
+
 /* ============================================
    FLAG FOOTBALL PAGE - SIMPLE TILE LAYOUT
    ============================================ */
@@ -3554,11 +3583,11 @@ section {
     .rule-tile:nth-child(even) {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .rule-tile:nth-child(even) .rule-tile__media {
         order: 2;
     }
-    
+
     .rule-tile:nth-child(even) .rule-tile__content {
         order: 1;
     }

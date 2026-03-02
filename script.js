@@ -195,3 +195,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Language Switcher
+const langButtons = document.querySelectorAll('.lang-btn');
+let currentLang = localStorage.getItem('language') || 'ua';
+
+function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('language', lang);
+
+    // Update active button
+    langButtons.forEach(btn => {
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+
+    // Update all text elements
+    document.querySelectorAll('[data-lang-ua]').forEach(element => {
+        const uaText = element.getAttribute('data-lang-ua');
+        const enText = element.getAttribute('data-lang-en');
+
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+            // Update placeholder for form inputs
+            element.placeholder = lang === 'ua' ? uaText : enText;
+        } else {
+            // Update text content for other elements
+            element.textContent = lang === 'ua' ? uaText : enText;
+        }
+    });
+}
+
+langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        setLanguage(lang);
+    });
+});
+
+// Set initial language on page load
+setLanguage(currentLang);

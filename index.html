@@ -26,13 +26,23 @@
             </div>
             <nav class="nav">
                 <ul class="nav-menu">
-                    <li><a href="#about">ПРО КОМАНДУ</a></li>
-                    <li><a href="flag-football.html">ФЛЕГ-ФУТБОЛ</a></li>
-                    <li><a href="#practice-locations">ТРЕНУВАННЯ</a></li>
-                    <li><a href="#gallery">МЕДІА</a></li>
-                    <li><a href="#contact">КОНТАКТИ</a></li>
+                    <li><a href="#about" data-lang-ua="ПРО КОМАНДУ" data-lang-en="ABOUT TEAM">ПРО КОМАНДУ</a></li>
+                    <li><a href="flag-football.html" data-lang-ua="ФЛЕГ-ФУТБОЛ"
+                            data-lang-en="FLAG FOOTBALL">ФЛЕГ-ФУТБОЛ</a></li>
+                    <li><a href="#practice-locations" data-lang-ua="ТРЕНУВАННЯ" data-lang-en="TRAINING">ТРЕНУВАННЯ</a>
+                    </li>
+                    <li><a href="#gallery" data-lang-ua="МЕДІА" data-lang-en="MEDIA">МЕДІА</a></li>
+                    <li><a href="#contact" data-lang-ua="КОНТАКТИ" data-lang-en="CONTACTS">КОНТАКТИ</a></li>
                 </ul>
             </nav>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ua">
+                    <span class="flag-icon">🇺🇦</span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="flag-icon">🇬🇧</span>
+                </button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -67,7 +77,8 @@
                     <div class="feed-image team-image male-team"
                         style="background-image: url('assets/men-team.jpg'); background-size: cover; background-position: center top;">
                         <div class="team-text-overlay">
-                            <h3 class="team-title">ЧОЛОВІЧА КОМАНДА</h3>
+                            <h3 class="team-title" data-lang-ua="ЧОЛОВІЧА КОМАНДА" data-lang-en="MEN'S TEAM">ЧОЛОВІЧА
+                                КОМАНДА</h3>
                         </div>
                     </div>
                 </a>
@@ -75,7 +86,8 @@
                     <div class="feed-image team-image female-team"
                         style="background-image: url('assets/womens.png'); background-size: cover; background-position: left top;">
                         <div class="team-text-overlay">
-                            <h3 class="team-title">ЖІНОЧА КОМАНДА</h3>
+                            <h3 class="team-title" data-lang-ua="ЖІНОЧА КОМАНДА" data-lang-en="WOMEN'S TEAM">ЖІНОЧА
+                                КОМАНДА</h3>
                         </div>
                     </div>
                 </a>
@@ -92,7 +104,8 @@
                     <div class="feed-image team-image flag-football-bg"
                         style="background-image: url('assets/flag.png'); background-size: 110%; background-position: right top; background-repeat: no-repeat;">
                         <div class="team-text-overlay">
-                            <h3 class="team-title">ФЛЕГ ФУТБОЛ</h3>
+                            <h3 class="team-title" data-lang-ua="ФЛЕГ-ФУТБОЛ" data-lang-en="FLAG FOOTBALL">ФЛЕГ-ФУТБОЛ
+                            </h3>
                         </div>
                     </div>
                 </a>
@@ -103,17 +116,21 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-header">
-                <h2 class="about-header__title">ПРО КОМАНДУ</h2>
+                <h2 class="about-header__title" data-lang-ua="ПРО КОМАНДУ" data-lang-en="ABOUT TEAM">ПРО КОМАНДУ</h2>
             </div>
 
             <div class="about-content-simple">
                 <div class="about-story">
-                    <p class="about-story__text">
+                    <p class="about-story__text"
+                        data-lang-ua="Львівські Леви — це більше ніж команда. Ми — спільнота, яка об'єднує людей різного віку та досвіду навколо любові до флег-футболу. Наша місія — розвивати цей динамічний вид спорту у Львові та створювати можливості для кожного, хто хоче стати частиною чогось великого."
+                        data-lang-en="Lviv Lions is more than a team. We are a community that brings together people of all ages and experience around the love of flag football. Our mission is to develop this dynamic sport in Lviv and create opportunities for everyone who wants to be part of something great.">
                         Львівські Леви — це більше ніж команда. Ми — спільнота, яка об'єднує людей різного віку та
                         досвіду навколо любові до флег-футболу. Наша місія — розвивати цей динамічний вид спорту у
                         Львові та створювати можливості для кожного, хто хоче стати частиною чогось великого.
                     </p>
-                    <p class="about-story__text">
+                    <p class="about-story__text"
+                        data-lang-ua="Ми віримо, що спорт — це не лише фізична активність, а й спосіб розвитку характеру, дисципліни та командного духу. Кожне тренування — це крок до досконалості, кожна гра — це можливість проявити себе."
+                        data-lang-en="We believe that sport is not just physical activity, but also a way to develop character, discipline and team spirit. Every training is a step towards excellence, every game is an opportunity to prove yourself.">
                         Ми віримо, що спорт — це не лише фізична активність, а й спосіб розвитку характеру, дисципліни
                         та командного духу. Кожне тренування — це крок до досконалості, кожна гра — це можливість
                         проявити себе.
@@ -122,32 +139,50 @@
 
                 <ul class="about-list">
                     <li class="about-list__item">
-                        <span class="about-list__text"><strong>Сучасна інфраструктура</strong><br>Тренування проходять
+                        <span class="about-list__text"
+                            data-lang-ua="Сучасна інфраструктура - Тренування проходять на якісних майданчиках із необхідним обладнанням, що відповідає сучасним стандартам підготовки."
+                            data-lang-en="Modern Infrastructure - Training takes place on quality fields with necessary equipment that meets modern preparation standards."><strong>Сучасна
+                                інфраструктура</strong><br>Тренування проходять
                             на якісних майданчиках із необхідним обладнанням, що відповідає сучасним стандартам
                             підготовки.</span>
                     </li>
                     <li class="about-list__item">
-                        <span class="about-list__text"><strong>Досвідчені тренери</strong><br>З вами працюють фахівці з
+                        <span class="about-list__text"
+                            data-lang-ua="Досвідчені тренери - З вами працюють фахівці з практичним і змагальним досвідом, які системно розвивають техніку, тактику та фізичну підготовку гравців."
+                            data-lang-en="Experienced Coaches - You work with specialists with practical and competitive experience who systematically develop players' technique, tactics and physical preparation."><strong>Досвідчені
+                                тренери</strong><br>З вами працюють фахівці з
                             практичним і змагальним досвідом, які системно розвивають техніку, тактику та фізичну
                             підготовку гравців.</span>
                     </li>
                     <li class="about-list__item">
-                        <span class="about-list__text"><strong>Національні та міжнародні змагання</strong><br>Ми
+                        <span class="about-list__text"
+                            data-lang-ua="Національні та міжнародні змагання - Ми регулярно беремо участь у турнірах в Україні та за кордоном, отримуючи досвід гри проти сильних суперників."
+                            data-lang-en="National and International Competitions - We regularly participate in tournaments in Ukraine and abroad, gaining experience playing against strong opponents."><strong>Національні
+                                та міжнародні змагання</strong><br>Ми
                             регулярно беремо участь у турнірах в Україні та за кордоном, отримуючи досвід гри проти
                             сильних суперників.</span>
                     </li>
                     <li class="about-list__item">
-                        <span class="about-list__text"><strong>Дружня командна атмосфера</strong><br>Команда — це
+                        <span class="about-list__text"
+                            data-lang-ua="Дружня командна атмосфера - Команда — це підтримка, взаємоповага та спільна мета. Ми формуємо середовище, де кожен може розкрити свій потенціал."
+                            data-lang-en="Friendly Team Atmosphere - The team is support, mutual respect and a common goal. We create an environment where everyone can unlock their potential."><strong>Дружня
+                                командна атмосфера</strong><br>Команда — це
                             підтримка, взаємоповага та спільна мета. Ми формуємо середовище, де кожен може розкрити свій
                             потенціал.</span>
                     </li>
                     <li class="about-list__item">
-                        <span class="about-list__text"><strong>Розвиток фізичних та атлетичних
+                        <span class="about-list__text"
+                            data-lang-ua="Розвиток фізичних та атлетичних навичок - Флег-футбол допомагає покращити швидкість, координацію, витривалість, реакцію та стратегічне мислення у форматі командного спорту."
+                            data-lang-en="Physical and Athletic Skills Development - Flag football helps improve speed, coordination, endurance, reaction and strategic thinking in a team sport format."><strong>Розвиток
+                                фізичних та атлетичних
                                 навичок</strong><br>Флег-футбол допомагає покращити швидкість, координацію,
                             витривалість, реакцію та стратегічне мислення у форматі командного спорту.</span>
                     </li>
                     <li class="about-list__item">
-                        <span class="about-list__text"><strong>Олімпійський вид спорту</strong><br>Флег-футбол — це
+                        <span class="about-list__text"
+                            data-lang-ua="Олімпійський вид спорту - Флег-футбол — це безконтактна версія американського футболу, який включено до програми Олімпійських ігор, що відкриває нові можливості для розвитку та міжнародних перспектив."
+                            data-lang-en="Olympic Sport - Flag football is a non-contact version of American football that is included in the Olympic Games program, opening new opportunities for development and international prospects."><strong>Олімпійський
+                                вид спорту</strong><br>Флег-футбол — це
                             безконтактна версія американського футболу, який включено до програми Олімпійських ігор, що
                             відкриває нові можливості для розвитку та міжнародних перспектив.</span>
                     </li>
@@ -155,27 +190,34 @@
             </div>
 
             <div class="practice-locations" id="practice-locations">
-                <h3 class="practice-locations__title">Локації тренувань</h3>
+                <h3 class="practice-locations__title" data-lang-ua="Локації тренувань"
+                    data-lang-en="Training Locations">Локації тренувань</h3>
                 <div class="practice-locations__grid">
                     <div class="practice-location__card">
                         <div class="practice-location__image" style="background-image: url('assets/unist.png');"></div>
                         <div class="practice-location__info">
-                            <div class="practice-location__name">Стадіон "Юність"</div>
-                            <div class="practice-location__time">Літній час</div>
+                            <div class="practice-location__name" data-lang-ua="Стадіон &quot;Юність&quot;"
+                                data-lang-en="Stadium &quot;Yunist&quot;">Стадіон "Юність"</div>
+                            <div class="practice-location__time" data-lang-ua="Середа 19:30 (літній час)"
+                                data-lang-en="Wednesday 19:30 (summer time)">Середа 19:30 (літній час)</div>
                         </div>
                     </div>
                     <div class="practice-location__card">
                         <div class="practice-location__image" style="background-image: url('assets/ska.png');"></div>
                         <div class="practice-location__info">
-                            <div class="practice-location__name">Атлетичний манеж СКА</div>
-                            <div class="practice-location__time">Середа 19:30 (зимовий час)</div>
+                            <div class="practice-location__name" data-lang-ua="Атлетичний манеж СКА"
+                                data-lang-en="SKA Athletic Hall">Атлетичний манеж СКА</div>
+                            <div class="practice-location__time" data-lang-ua="Середа 19:30 (зимовий час)"
+                                data-lang-en="Wednesday 19:30 (winter time)">Середа 19:30 (зимовий час)</div>
                         </div>
                     </div>
                     <div class="practice-location__card">
                         <div class="practice-location__image" style="background-image: url('assets/sokil.png');"></div>
                         <div class="practice-location__info">
-                            <div class="practice-location__name">Стадіон Сокіл</div>
-                            <div class="practice-location__time">Неділя 12:00</div>
+                            <div class="practice-location__name" data-lang-ua="Стадіон &quot;Сокіл&quot;"
+                                data-lang-en="Stadium &quot;Sokil&quot;">Стадіон "Сокіл"</div>
+                            <div class="practice-location__time" data-lang-ua="Неділя 12:00"
+                                data-lang-en="Sunday 12:00">Неділя 12:00</div>
                         </div>
                     </div>
                     <div class="practice-location__card">
@@ -183,19 +225,23 @@
                             style="background-image: url('assets/differ1.png'); background-position: center 30%;">
                         </div>
                         <div class="practice-location__info">
-                            <div class="practice-location__name">Фітнес клуб differ sport</div>
-                            <div class="practice-location__time">Четвер 21:00</div>
+                            <div class="practice-location__name" data-lang-ua="Фітнес клуб differ sport"
+                                data-lang-en="Differ Sport Fitness Club">Фітнес клуб differ sport</div>
+                            <div class="practice-location__time" data-lang-ua="Четвер 21:00"
+                                data-lang-en="Thursday 21:00">Четвер 21:00</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="about-cta">
-                <a href="#contact" class="about-cta__button">Приєднатися до команди</a>
+                <a href="#contact" class="about-cta__button" data-lang-ua="Приєднатися до команди"
+                    data-lang-en="Join the Team">Приєднатися до команди</a>
             </div>
 
             <div class="about-social">
-                <span class="about-social__text">Підписуйся на Instagram</span>
+                <span class="about-social__text" data-lang-ua="Підписуйся на Instagram"
+                    data-lang-en="Follow us on Instagram">Підписуйся на Instagram</span>
                 <a href="https://instagram.com/lvivlions" target="_blank" class="about-social__link">
                     <svg class="about-social__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2">
@@ -212,7 +258,8 @@
     <section id="team-male" class="team-section team-male">
         <div class="container">
             <div class="about-header">
-                <h2 class="about-header__title">ЧОЛОВІЧА КОМАНДА</h2>
+                <h2 class="about-header__title" data-lang-ua="ЧОЛОВІЧА КОМАНДА" data-lang-en="MEN'S TEAM">ЧОЛОВІЧА
+                    КОМАНДА</h2>
             </div>
 
             <div class="team-photos">
@@ -221,8 +268,12 @@
             </div>
 
             <div class="team-content">
-                <h3 class="team-content__title">Чоловіча команда (заснована 2011)</h3>
-                <p class="team-content__text">Заснована у 2011 році, чоловіча команда стабільно демонструє високий
+                <h3 class="team-content__title" data-lang-ua="Чоловіча команда" data-lang-en="Men's Team">Чоловіча
+                    команда</h3>
+                <p class="team-content__text"
+                    data-lang-ua="Заснована у 2011 році, чоловіча команда стабільно демонструє високий рівень гри та конкурентний характер. Ми — багаторазові переможці та призери всеукраїнських і міжнародних турнірів, команда, яка ставить амбітні цілі на кожен сезон і працює на результат. Наша філософія — дисципліна, швидкість, тактика та постійний розвиток. Ми системно тренуємося і будуємо гру навколо командної взаємодії."
+                    data-lang-en="Founded in 2011, the men's team consistently demonstrates a high level of play and competitive character. We are multiple winners and prize-winners of national and international tournaments, a team that sets ambitious goals for each season and works for results. Our philosophy is discipline, speed, tactics and constant development. We train systematically and build the game around team interaction.">
+                    Заснована у 2011 році, чоловіча команда стабільно демонструє високий
                     рівень гри та конкурентний характер. Ми — багаторазові переможці та призери всеукраїнських і
                     міжнародних турнірів, команда, яка ставить амбітні цілі на кожен сезон і працює на результат. Наша
                     філософія — дисципліна, швидкість, тактика та постійний розвиток. Ми системно тренуємося і будуємо
@@ -230,7 +281,8 @@
             </div>
 
             <div class="about-cta">
-                <a href="#contact" class="about-cta__button">Приєднатися до команди</a>
+                <a href="#contact" class="about-cta__button" data-lang-ua="Приєднатися до команди"
+                    data-lang-en="Join the Team">Приєднатися до команди</a>
             </div>
         </div>
     </section>
@@ -238,7 +290,8 @@
     <section id="team-female" class="team-section team-female">
         <div class="container">
             <div class="about-header">
-                <h2 class="about-header__title">ЖІНОЧА КОМАНДА</h2>
+                <h2 class="about-header__title" data-lang-ua="ЖІНОЧА КОМАНДА" data-lang-en="WOMEN'S TEAM">ЖІНОЧА КОМАНДА
+                </h2>
             </div>
 
             <div class="team-photos">
@@ -249,15 +302,20 @@
             </div>
 
             <div class="team-content">
-                <h3 class="team-content__title">Жіноча команда (заснована 2020)</h3>
-                <p class="team-content__text">Жіноча команда створена у 2020 році та активно розвивається, формуючи
+                <h3 class="team-content__title" data-lang-ua="Жіноча команда" data-lang-en="Women's Team">Жіноча команда
+                </h3>
+                <p class="team-content__text"
+                    data-lang-ua="Жіноча команда створена у 2020 році та активно розвивається, формуючи конкурентний склад. Ми прагнемо досягати результатів на національному та міжнародному рівні, розвиваючи флег-футбол і підвищуючи рівень кожної гравчині. Команда поєднує швидкість, стратегію та згуртованість, створюючи середовище для росту й прогресу."
+                    data-lang-en="The women's team was created in 2020 and is actively developing, forming a competitive roster. We strive to achieve results at the national and international level, developing flag football and improving the level of each player. The team combines speed, strategy and cohesion, creating an environment for growth and progress.">
+                    Жіноча команда створена у 2020 році та активно розвивається, формуючи
                     конкурентний склад. Ми прагнемо досягати результатів на національному та міжнародному рівні,
                     розвиваючи флег-футбол і підвищуючи рівень кожної гравчині. Команда поєднує швидкість, стратегію та
                     згуртованість, створюючи середовище для росту й прогресу.</p>
             </div>
 
             <div class="about-cta">
-                <a href="#contact" class="about-cta__button">Приєднатися до команди</a>
+                <a href="#contact" class="about-cta__button" data-lang-ua="Приєднатися до команди"
+                    data-lang-en="Join the Team">Приєднатися до команди</a>
             </div>
         </div>
     </section>
@@ -324,7 +382,7 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">МЕДІА</h2>
+                <h2 class="section-title" data-lang-ua="МЕДІА" data-lang-en="MEDIA">МЕДІА</h2>
             </div>
             <div class="gallery-content">
                 <div class="gallery-tab-content active" id="photos">
@@ -405,7 +463,8 @@
     <section class="partners">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">ПАРТНЕРИ ТА СПОНСОРИ</h2>
+                <h2 class="section-title" data-lang-ua="ПАРТНЕРИ ТА СПОНСОРИ" data-lang-en="PARTNERS AND SPONSORS">
+                    ПАРТНЕРИ ТА СПОНСОРИ</h2>
             </div>
             <div class="sponsors-grid">
                 <div class="sponsor-logo">
@@ -430,7 +489,7 @@
     <section id="contact" class="contact contact-light">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">КОНТАКТИ</h2>
+                <h2 class="section-title" data-lang-ua="КОНТАКТИ" data-lang-en="CONTACTS">КОНТАКТИ</h2>
             </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
@@ -438,14 +497,16 @@
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
                             <div>
-                                <h4>Адреса</h4>
-                                <p>Львів, стадіон "Юність"<br>вул. Болгарська 4</p>
+                                <h4 data-lang-ua="Адреса" data-lang-en="Address">Адреса</h4>
+                                <p data-lang-ua="Львів, стадіон &quot;Сокіл&quot; вул. Патона 1"
+                                    data-lang-en="Lviv, Stadium &quot;Sokil&quot; 1 Patona St">Львів, стадіон
+                                    "Сокіл"<br>вул. Патона 1</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
                             <div>
-                                <h4>Телефон</h4>
+                                <h4 data-lang-ua="Телефон" data-lang-en="Phone">Телефон</h4>
                                 <p>+380632426495</p>
                             </div>
                         </div>
@@ -458,23 +519,17 @@
                         </div>
                     </div>
                     <div class="social-section">
-                        <h4>Follow Us</h4>
+                        <h4 data-lang-ua="Слідкуйте за нами" data-lang-en="Follow Us">Слідкуйте за нами</h4>
                         <div class="social-icons">
                             <a href="https://instagram.com/lvivlions" target="_blank"
                                 class="social-icon social-icon-large" aria-label="Instagram">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                    <circle cx="12" cy="12" r="4" fill="#0a0a0a" />
-                                    <circle cx="18" cy="6" r="1.5" />
-                                </svg>
+                                <img src="assets/iglogo.avif" alt="Instagram"
+                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
                             </a>
                             <a href="https://youtube.com/@lvivlionsfootball/videos" target="_blank"
                                 class="social-icon social-icon-large" aria-label="YouTube">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" />
-                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#0a0a0a" />
-                                </svg>
+                                <img src="assets/ytlogo.avif" alt="YouTube"
+                                    style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
                             </a>
                         </div>
                     </div>
@@ -482,18 +537,22 @@
                 <div class="contact-form">
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Ваше ім'я" required>
+                            <input type="text" data-lang-ua="Ваше ім'я" data-lang-en="Your name" placeholder="Ваше ім'я"
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Ваш email" required>
+                            <input type="email" data-lang-ua="Ваш email" data-lang-en="Your email"
+                                placeholder="Ваш email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Тема">
+                            <input type="text" data-lang-ua="Тема" data-lang-en="Subject" placeholder="Тема">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Ваше повідомлення" rows="5" required></textarea>
+                            <textarea data-lang-ua="Ваше повідомлення" data-lang-en="Your message"
+                                placeholder="Ваше повідомлення" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">НАДІСЛАТИ ПОВІДОМЛЕННЯ</button>
+                        <button type="submit" class="btn btn-primary" data-lang-ua="НАДІСЛАТИ ПОВІДОМЛЕННЯ"
+                            data-lang-en="SEND MESSAGE">НАДІСЛАТИ ПОВІДОМЛЕННЯ</button>
                     </form>
                 </div>
             </div>
@@ -504,7 +563,9 @@
         <div class="container">
             <div class="footer-simple">
                 <h3>LVIV LIONS</h3>
-                <p>&copy; 2026 Lviv Lions. All rights reserved.</p>
+                <p data-lang-ua="&copy; 2026 Lviv Lions. Всі права захищені."
+                    data-lang-en="&copy; 2026 Lviv Lions. All rights reserved.">&copy; 2026 Lviv Lions. Всі права
+                    захищені.</p>
             </div>
         </div>
     </footer>

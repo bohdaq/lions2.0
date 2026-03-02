@@ -96,23 +96,23 @@
 
         .rule-tile__media {
             height: 100%;
-            min-height: 400px;
+            min-height: 300px;
             overflow: hidden;
         }
 
         @media (min-width: 968px) {
             .rule-tile__media {
-                min-height: 450px;
+                min-height: 350px;
             }
         }
 
         .rule-tile__content {
-            padding: 2rem 2rem 2rem 3rem;
+            padding: 2rem;
         }
 
         @media (min-width: 968px) {
             .rule-tile__content {
-                padding: 3rem 3rem 3rem 4rem;
+                padding: 2.5rem 3rem;
             }
         }
 
@@ -123,6 +123,16 @@
             object-fit: cover;
             object-position: center center;
             display: block;
+        }
+
+        .rule-tile__image {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            object-fit: contain;
+            object-position: center center;
+            display: block;
+            background: #f8f8f8;
         }
 
         .rule-tile__placeholder {
@@ -178,13 +188,24 @@
             </div>
             <nav class="nav">
                 <ul class="nav-menu">
-                    <li><a href="index.html#about">ПРО КОМАНДУ</a></li>
-                    <li><a href="flag-football.html">ФЛЕГ-ФУТБОЛ</a></li>
-                    <li><a href="index.html#practice-locations">ТРЕНУВАННЯ</a></li>
-                    <li><a href="index.html#gallery">МЕДІА</a></li>
-                    <li><a href="index.html#contact">КОНТАКТИ</a></li>
+                    <li><a href="index.html#about" data-lang-ua="ПРО КОМАНДУ" data-lang-en="ABOUT TEAM">ПРО КОМАНДУ</a>
+                    </li>
+                    <li><a href="flag-football.html" data-lang-ua="ФЛЕГ-ФУТБОЛ"
+                            data-lang-en="FLAG FOOTBALL">ФЛЕГ-ФУТБОЛ</a></li>
+                    <li><a href="index.html#practice-locations" data-lang-ua="ТРЕНУВАННЯ"
+                            data-lang-en="TRAINING">ТРЕНУВАННЯ</a></li>
+                    <li><a href="index.html#gallery" data-lang-ua="МЕДІА" data-lang-en="MEDIA">МЕДІА</a></li>
+                    <li><a href="index.html#contact" data-lang-ua="КОНТАКТИ" data-lang-en="CONTACTS">КОНТАКТИ</a></li>
                 </ul>
             </nav>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ua">
+                    <span class="flag-icon">🇺🇦</span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="flag-icon">🇬🇧</span>
+                </button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -199,17 +220,22 @@
                 <div class="rule-tile">
                     <div class="rule-tile__media">
                         <video class="rule-tile__video" autoplay loop muted playsinline>
-                            <source src="assets/catch-top.mp4" type="video/mp4">
+                            <source src="assets/td1-square.mp4?v=3" type="video/mp4">
                             Ваш браузер не підтримує відео.
                         </video>
                     </div>
                     <div class="rule-tile__content">
-                        <h2 class="rule-tile__title">Що таке флег-футбол?</h2>
-                        <p class="rule-tile__text">
+                        <h2 class="rule-tile__title" data-lang-ua="Що таке флег-футбол?"
+                            data-lang-en="What is Flag Football?">Що таке флег-футбол?</h2>
+                        <p class="rule-tile__text"
+                            data-lang-ua="Флег-футбол — це швидка безконтактна версія американського футболу. Замість силових прийомів гравця зупиняють, зірвавши прапорець з його пояса."
+                            data-lang-en="Flag football is a fast non-contact version of American football. Instead of tackles, a player is stopped by pulling a flag from their belt.">
                             Флег-футбол — це швидка безконтактна версія американського футболу. Замість силових прийомів
                             гравця зупиняють, зірвавши прапорець з його пояса.
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text"
+                            data-lang-ua="Вид спорту стрімко розвивається у світі та офіційно включений до програми Олімпійських ігор (Лос-Анджелес 2028). Швидкість, безпечність і доступність роблять його одним із найдинамічніших командних видів спорту сьогодня."
+                            data-lang-en="The sport is rapidly developing worldwide and is officially included in the Olympic Games program (Los Angeles 2028). Speed, safety and accessibility make it one of the most dynamic team sports today.">
                             Вид спорту стрімко розвивається у світі та офіційно включений до програми Олімпійських ігор
                             (Лос-Анджелес 2028). Швидкість, безпечність і доступність роблять його одним із
                             найдинамічніших командних видів спорту сьогодня.
@@ -219,17 +245,21 @@
 
                 <div class="rule-tile">
                     <div class="rule-tile__media">
-                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                        <img src="assets/pos.jpg" alt="Формат гри" class="rule-tile__image">
                     </div>
                     <div class="rule-tile__content">
-                        <h2 class="rule-tile__title">Формат гри</h2>
-                        <p class="rule-tile__text">
+                        <h2 class="rule-tile__title" data-lang-ua="Формат гри" data-lang-en="Game Format">Формат гри
+                        </h2>
+                        <p class="rule-tile__text" data-lang-ua="5 на 5 гравців" data-lang-en="5 on 5 players">
                             <strong>5 на 5 гравців</strong>
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Дві половини (турнірний формат: 2 × 20 хвилин)"
+                            data-lang-en="Two halves (tournament format: 2 × 20 minutes)">
                             Дві половини (турнірний формат: 2 × 20 хвилин)
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text"
+                            data-lang-ua="Годинник зупиняється лише на перерві, тайм-аутах або травмах"
+                            data-lang-en="Clock stops only at halftime, timeouts or injuries">
                             Годинник зупиняється лише на перерві, тайм-аутах або травмах
                         </p>
                     </div>
@@ -237,29 +267,37 @@
 
                 <div class="rule-tile">
                     <div class="rule-tile__media">
-                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                        <img src="assets/equip3.png" alt="Основні правила" class="rule-tile__image">
                     </div>
                     <div class="rule-tile__content">
-                        <h2 class="rule-tile__title">Основні правила</h2>
-                        <p class="rule-tile__text">
+                        <h2 class="rule-tile__title" data-lang-ua="Основні правила" data-lang-en="Basic Rules">Основні
+                            правила</h2>
+                        <p class="rule-tile__text" data-lang-ua="Мінімальний контакт" data-lang-en="Minimal contact">
                             <strong>Мінімальний контакт</strong>
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text"
+                            data-lang-ua="Заборонені удари, пірнання з м'ячем і блокування суперника"
+                            data-lang-en="Hitting, diving with the ball and blocking opponents are prohibited">
                             Заборонені удари, пірнання з м'ячем і блокування суперника
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Розіграш завершується після зриву прапорця"
+                            data-lang-en="Play ends after flag is pulled">
                             Розіграш завершується після зриву прапорця
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Квотербек не може перетинати лінію розіграшу з м'ячем"
+                            data-lang-en="Quarterback cannot cross the line of scrimmage with the ball">
                             Квотербек не може перетинати лінію розіграшу з м'ячем
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Лише 1 пас вперед за розіграш"
+                            data-lang-en="Only 1 forward pass per play">
                             Лише 1 пас вперед за розіграш
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Пас вперед має бути спійманий за лінією розіграшу"
+                            data-lang-en="Forward pass must be caught behind the line of scrimmage">
                             Пас вперед має бути спійманий за лінією розіграшу
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Необмежені передачі назад за лінією розіграшу"
+                            data-lang-en="Unlimited backward passes behind the line of scrimmage">
                             Необмежені передачі назад за лінією розіграшу
                         </p>
                     </div>
@@ -267,28 +305,39 @@
 
                 <div class="rule-tile">
                     <div class="rule-tile__media">
-                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                        <video class="rule-tile__video" autoplay loop muted playsinline>
+                            <source src="assets/catch-top.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео.
+                        </video>
                     </div>
                     <div class="rule-tile__content">
-                        <h2 class="rule-tile__title">Спроби та набір очок</h2>
-                        <p class="rule-tile__text">
+                        <h2 class="rule-tile__title" data-lang-ua="Спроби та набір очок"
+                            data-lang-en="Downs and Scoring">Спроби та набір очок</h2>
+                        <p class="rule-tile__text" data-lang-ua="Атака починає зі своєї 5-ярдової лінії"
+                            data-lang-en="Offense starts from their 5-yard line">
                             Атака починає зі своєї 5-ярдової лінії
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="4 спроби, щоб перейти центр поля"
+                            data-lang-en="4 downs to cross midfield">
                             4 спроби, щоб перейти центр поля
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text"
+                            data-lang-ua="Після перетину центру — 4 спроби для занесення тачдауну"
+                            data-lang-en="After crossing midfield — 4 downs to score a touchdown">
                             Після перетину центру — 4 спроби для занесення тачдауну
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Тачдаун — 6 очок" data-lang-en="Touchdown — 6 points">
                             <strong>Тачдаун — 6 очок</strong>
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Реалізація: 1 очко з 5 ярдів, 2 очки з 10 ярдів"
+                            data-lang-en="Conversion: 1 point from 5 yards, 2 points from 10 yards">
                             <strong>Реалізація:</strong><br>
                             1 очко з 5 ярдів<br>
                             2 очки з 10 ярдів
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text"
+                            data-lang-ua="Сейфті (зрив прапорця з гравця у власній заліковій зоні) — 2 очки"
+                            data-lang-en="Safety (flag pulled from player in own end zone) — 2 points">
                             Сейфті (зрив прапорця з гравця у власній заліковій зоні) — 2 очки
                         </p>
                     </div>
@@ -302,17 +351,25 @@
                         </video>
                     </div>
                     <div class="rule-tile__content">
-                        <h2 class="rule-tile__title">Правила бігу</h2>
-                        <p class="rule-tile__text">
+                        <h2 class="rule-tile__title" data-lang-ua="Правила бігу" data-lang-en="Running Rules">Правила
+                            бігу</h2>
+                        <p class="rule-tile__text"
+                            data-lang-ua="Заборонено стрибати або пірнати, щоб уникнути зриву прапорця, проте дозволено ухилятися"
+                            data-lang-en="Jumping or diving to avoid flag pull is prohibited, but dodging is allowed">
                             Заборонено стрибати або пірнати, щоб уникнути зриву прапорця, проте дозволено ухилятися
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Оберт (spin) дозволений"
+                            data-lang-en="Spin is allowed">
                             Оберт (spin) дозволений
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text"
+                            data-lang-ua="Зони без бігу: 5 ярдів перед ендзоною та біля центру поля"
+                            data-lang-en="No-run zones: 5 yards before end zone and near midfield">
                             <strong>Зони без бігу:</strong> 5 ярдів перед ендзоною та біля центру поля
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text"
+                            data-lang-ua="Кінець розіграшу визначається положенням м'яча в момент зриву прапорця"
+                            data-lang-en="End of play is determined by ball position at moment of flag pull">
                             Кінець розіграшу визначається положенням м'яча в момент зриву прапорця
                         </p>
                     </div>
@@ -326,11 +383,14 @@
                         </video>
                     </div>
                     <div class="rule-tile__content">
-                        <h2 class="rule-tile__title">Правила пасу</h2>
-                        <p class="rule-tile__text">
+                        <h2 class="rule-tile__title" data-lang-ua="Правила пасу" data-lang-en="Passing Rules">Правила
+                            пасу</h2>
+                        <p class="rule-tile__text" data-lang-ua="Квотербек має 7 секунд на виконання передачі"
+                            data-lang-en="Quarterback has 7 seconds to throw the pass">
                             Квотербек має 7 секунд на виконання передачі
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Перехоплення м'яча захистом можна повертати"
+                            data-lang-en="Interceptions by defense can be returned">
                             Перехоплення м'яча захистом можна повертати
                         </p>
                     </div>
@@ -338,17 +398,24 @@
 
                 <div class="rule-tile">
                     <div class="rule-tile__media">
-                        <div class="rule-tile__placeholder">Місце для відео/фото</div>
+                        <video class="rule-tile__video" autoplay loop muted playsinline>
+                            <source src="assets/sack-square.mp4?v=2" type="video/mp4">
+                            Ваш браузер не підтримує відео.
+                        </video>
                     </div>
                     <div class="rule-tile__content">
-                        <h2 class="rule-tile__title">Пресинг на квотербека</h2>
-                        <p class="rule-tile__text">
+                        <h2 class="rule-tile__title" data-lang-ua="Пресинг на квотербека" data-lang-en="QB Rush">Пресинг
+                            на квотербека</h2>
+                        <p class="rule-tile__text" data-lang-ua="1 або 2 призначені гравці можуть виконувати пресинг"
+                            data-lang-en="1 or 2 designated players can rush">
                             1 або 2 призначені гравці можуть виконувати пресинг
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Стартують за 7 ярдів від лінії розіграшу"
+                            data-lang-en="Start 7 yards from line of scrimmage">
                             Стартують за 7 ярдів від лінії розіграшу
                         </p>
-                        <p class="rule-tile__text">
+                        <p class="rule-tile__text" data-lang-ua="Після передачі назад усі захисники можуть атакувати"
+                            data-lang-en="After backward pass all defenders can rush">
                             Після передачі назад усі захисники можуть атакувати
                         </p>
                     </div>
