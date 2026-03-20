@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <div class="logo-icon">
                     <img src="assets/logo.png" alt="Lviv Lions Logo">
                 </div>
@@ -23,7 +23,7 @@
                     <span class="logo-text">ЛЬВІВСЬКІ ЛЕВИ</span>
                     <span class="logo-tagline">Флеґ-футбол у Львові</span>
                 </div>
-            </div>
+            </a>
             <nav class="nav">
                 <ul class="nav-menu">
                     <li><a href="#about" data-lang-ua="ПРО КОМАНДУ" data-lang-en="ABOUT TEAM">ПРО КОМАНДУ</a></li>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#flag-football" class="feed-item team-link flag-football-tile">
+                <a href="flag-football.html" class="feed-item team-link flag-football-tile">
                     <div class="feed-image team-image flag-football-bg"
                         style="background-image: url('assets/flag.png'); background-size: 110%; background-position: right top; background-repeat: no-repeat;">
                         <div class="team-text-overlay">
@@ -535,20 +535,21 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form action="https://formspree.io/f/xdawjaop" method="POST">
                         <div class="form-group">
-                            <input type="text" data-lang-ua="Ваше ім'я" data-lang-en="Your name" placeholder="Ваше ім'я"
-                                required>
+                            <input type="text" name="name" data-lang-ua="Ваше ім'я" data-lang-en="Your name"
+                                placeholder="Ваше ім'я" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" data-lang-ua="Ваш email" data-lang-en="Your email"
+                            <input type="email" name="email" data-lang-ua="Ваш email" data-lang-en="Your email"
                                 placeholder="Ваш email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" data-lang-ua="Тема" data-lang-en="Subject" placeholder="Тема">
+                            <input type="text" name="subject" data-lang-ua="Тема" data-lang-en="Subject"
+                                placeholder="Тема">
                         </div>
                         <div class="form-group">
-                            <textarea data-lang-ua="Ваше повідомлення" data-lang-en="Your message"
+                            <textarea name="message" data-lang-ua="Ваше повідомлення" data-lang-en="Your message"
                                 placeholder="Ваше повідомлення" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" data-lang-ua="НАДІСЛАТИ ПОВІДОМЛЕННЯ"

@@ -37,6 +37,32 @@
             color: #666666;
         }
 
+        .hamburger span {
+            background: #1a1a1a !important;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                background: #ffffff !important;
+            }
+
+            .logo-text {
+                color: #1a1a1a !important;
+            }
+
+            .logo-tagline {
+                color: #666666 !important;
+            }
+
+            .nav-menu.active {
+                background: #ffffff !important;
+            }
+
+            .nav-menu.active a {
+                color: #1a1a1a !important;
+            }
+        }
+
         .flag-football-page {
             background: #ffffff;
             padding: 8rem 0 4rem 0;
@@ -177,7 +203,7 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <div class="logo-icon">
                     <img src="assets/logo.png" alt="Lviv Lions Logo">
                 </div>
@@ -185,7 +211,7 @@
                     <span class="logo-text">ЛЬВІВСЬКІ ЛЕВИ</span>
                     <span class="logo-tagline">Флеґ-футбол у Львові</span>
                 </div>
-            </div>
+            </a>
             <nav class="nav">
                 <ul class="nav-menu">
                     <li><a href="index.html#about" data-lang-ua="ПРО КОМАНДУ" data-lang-en="ABOUT TEAM">ПРО КОМАНДУ</a>
