@@ -59,14 +59,8 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for your message! We will get back to you soon.');
-        e.target.reset();
-    });
-}
+// Contact form is now handled by Formspree - no custom JavaScript needed
+// Form will submit directly to https://formspree.io/f/xdawjaop
 
 const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
