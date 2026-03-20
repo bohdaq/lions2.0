@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Американський футбол - Львівські Леви</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Override styles for minimalistic white design */
+        body {
+            background: #ffffff;
+        }
+
+        .header {
+            background: #ffffff !important;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo-text {
+            color: #1a1a1a;
+        }
+
+        .logo-tagline {
+            color: #666666;
+        }
+
+        .nav-menu a {
+            color: #1a1a1a;
+        }
+
+        .nav-menu a:hover {
+            color: #666666;
+        }
+
+        .hamburger span {
+            background: #1a1a1a !important;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                background: #ffffff !important;
+            }
+
+            .logo-text {
+                color: #1a1a1a !important;
+            }
+
+            .logo-tagline {
+                color: #666666 !important;
+            }
+
+            .nav-menu.active {
+                background: #ffffff !important;
+            }
+
+            .nav-menu.active a {
+                color: #1a1a1a !important;
+            }
+        }
+
+        .american-football-page {
+            background: #ffffff;
+            padding: 8rem 0 4rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .american-football-page {
+                padding: 6rem 0 4rem 0;
+            }
+        }
+
+        .page-title {
+            color: #1a1a1a;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .page-subtitle {
+            color: #666666;
+            font-size: 1rem;
+        }
+
+        .rule-tile {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .rule-tile:hover {
+            border-color: #cccccc;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 968px) {
+            .rule-tile {
+                gap: 3rem;
+            }
+        }
+
+        .rule-tile__title {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .rule-tile__text {
+            color: #333333;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .rules-tiles {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .rule-tile__media {
+            height: 100%;
+            min-height: 300px;
+            overflow: hidden;
+        }
+
+        @media (min-width: 968px) {
+            .rule-tile__media {
+                min-height: 350px;
+            }
+        }
+
+        .rule-tile__content {
+            padding: 2rem;
+        }
+
+        @media (min-width: 968px) {
+            .rule-tile__content {
+                padding: 2.5rem 3rem;
+            }
+        }
+
+        .rule-tile__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+        }
+
+        .footer {
+            background: #f8f8f8;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="Lviv Lions Logo">
+                </div>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">ЛЬВІВСЬКІ ЛЕВИ</span>
+                    <span class="logo-tagline">Флеґ-футбол у Львові</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html#about" data-lang-ua="ПРО КОМАНДУ" data-lang-en="ABOUT TEAM">ПРО КОМАНДУ</a>
+                    </li>
+                    <li><a href="american-football.html" data-lang-ua="АМЕРИКАНСЬКИЙ ФУТБОЛ"
+                            data-lang-en="AMERICAN FOOTBALL">АМЕРИКАНСЬКИЙ ФУТБОЛ</a></li>
+                    <li><a href="flag-football.html" data-lang-ua="ФЛЕГ-ФУТБОЛ"
+                            data-lang-en="FLAG FOOTBALL">ФЛЕГ-ФУТБОЛ</a></li>
+                    <li><a href="index.html#practice-locations" data-lang-ua="ТРЕНУВАННЯ"
+                            data-lang-en="TRAINING">ТРЕНУВАННЯ</a></li>
+                    <li><a href="index.html#gallery" data-lang-ua="МЕДІА" data-lang-en="MEDIA">МЕДІА</a></li>
+                    <li><a href="index.html#contact" data-lang-ua="КОНТАКТИ" data-lang-en="CONTACTS">КОНТАКТИ</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ua">
+                    <span class="flag-icon">🇺🇦</span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="flag-icon">🇬🇧</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="american-football-page">
+        <div class="container">
+            <div class="rules-tiles">
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af1.png" alt="Початок американського футболу у Львові" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="Американський футбол у Львові почав активно розвиватися у 2011 році, коли була заснована команда. Вона стала однією з перших, що популяризували цей вид спорту в регіоні, закладаючи фундамент для майбутніх успіхів і формування локальної спільноти." data-lang-en="American football in Lviv began to actively develop in 2011 when the team was founded. It became one of the first to popularize this sport in the region, laying the foundation for future successes and the formation of a local community.">
+                            Американський футбол у Львові почав активно розвиватися у 2011 році, коли була заснована команда. Вона стала однією з перших, що популяризували цей вид спорту в регіоні, закладаючи фундамент для майбутніх успіхів і формування локальної спільноти.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af2.png" alt="Перші чемпіонати" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="Вже у 2012 році команда дебютувала в чемпіонатах України, швидко заявивши про себе як про конкурентоспроможний колектив. Гравці набиралися досвіду, а інтерес до американського футболу у Львові поступово зростав." data-lang-en="Already in 2012, the team debuted in the championships of Ukraine, quickly establishing itself as a competitive team. Players gained experience, and interest in American football in Lviv gradually grew.">
+                            Вже у 2012 році команда дебютувала в чемпіонатах України, швидко заявивши про себе як про конкурентоспроможний колектив. Гравці набиралися досвіду, а інтерес до американського футболу у Львові поступово зростав.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af3.png" alt="Вища ліга та Суперліга" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="Починаючи з сезону 2015 року, команда виступала у Вищій лізі, а згодом і в Суперлізі — найсильнішому дивізіоні країни. Це стало підтвердженням стабільного розвитку та високого рівня гри." data-lang-en="Starting from the 2015 season, the team competed in the Higher League, and later in the Super League — the strongest division in the country. This confirmed stable development and a high level of play.">
+                            Починаючи з сезону 2015 року, команда виступала у Вищій лізі, а згодом і в Суперлізі — найсильнішому дивізіоні країни. Це стало підтвердженням стабільного розвитку та високого рівня гри.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af4.png" alt="Призові місця" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="За роки виступів команда неодноразово здобувала призові місця, ставши срібним та бронзовим призером чемпіонатів України. Гравці «левів» вважалися одними з найсильніших у країні." data-lang-en="Over the years, the team repeatedly won prizes, becoming silver and bronze medalists of the championships of Ukraine. The 'Lions' players were considered among the strongest in the country.">
+                            За роки виступів команда неодноразово здобувала призові місця, ставши срібним та бронзовим призером чемпіонатів України. Гравці «левів» вважалися одними з найсильніших у країні.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af5.png" alt="Домашній стадіон" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="Домашнім стадіоном команди була «Юність», де на матчі регулярно збиралися вболівальники. Іноді трибуни приймали близько тисячі глядачів, створюючи справжню атмосферу великого спорту у Львові." data-lang-en="The team's home stadium was 'Yunist', where fans regularly gathered for matches. Sometimes the stands hosted about a thousand spectators, creating a true atmosphere of big sports in Lviv.">
+                            Домашнім стадіоном команди була «Юність», де на матчі регулярно збиралися вболівальники. Іноді трибуни приймали близько тисячі глядачів, створюючи справжню атмосферу великого спорту у Львові.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af6.png" alt="Професійний підхід" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="Команда вирізнялася професійним підходом: у різні періоди з нею працював тренер зі США, а також виступали американські легіонери. Ростер налічував близько 40 гравців, а власна група підтримки додавала видовищності кожному матчу." data-lang-en="The team was distinguished by a professional approach: at different times, a coach from the USA worked with it, and American legionnaires also played. The roster numbered about 40 players, and its own support group added spectacle to every match.">
+                            Команда вирізнялася професійним підходом: у різні періоди з нею працював тренер зі США, а також виступали американські легіонери. Ростер налічував близько 40 гравців, а власна група підтримки додавала видовищності кожному матчу.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af7.png" alt="Подорожі Україною" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="«Леви» активно подорожували Україною, граючи матчі від Одеси до Харкова, Києва, Вінниці та Ужгорода. Це сприяло популяризації спорту та зміцненню позицій команди на національному рівні." data-lang-en="The 'Lions' actively traveled around Ukraine, playing matches from Odesa to Kharkiv, Kyiv, Vinnytsia and Uzhhorod. This contributed to the popularization of the sport and strengthening the team's position at the national level.">
+                            «Леви» активно подорожували Україною, граючи матчі від Одеси до Харкова, Києва, Вінниці та Ужгорода. Це сприяло популяризації спорту та зміцненню позицій команди на національному рівні.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af8.png" alt="Принципові суперники" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="Найпринциповішими суперниками були ужгородські «Лісоруби» — це протистояння стало справжнім дербі. Не менш напруженими були матчі проти київських «Capitals», з якими команда регулярно зустрічалася в одному дивізіоні та в плей-оф." data-lang-en="The most principled rivals were the Uzhhorod 'Lumberjacks' — this confrontation became a real derby. No less intense were the matches against Kyiv 'Capitals', with whom the team regularly met in the same division and in the playoffs.">
+                            Найпринциповішими суперниками були ужгородські «Лісоруби» — це протистояння стало справжнім дербі. Не менш напруженими були матчі проти київських «Capitals», з якими команда регулярно зустрічалася в одному дивізіоні та в плей-оф.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rule-tile">
+                    <div class="rule-tile__media">
+                        <img src="assets/af9.png" alt="Сучасність та флаг-футбол" class="rule-tile__image">
+                    </div>
+                    <div class="rule-tile__content">
+                        <p class="rule-tile__text" data-lang-ua="На жаль, через повномасштабне вторгнення розвиток американського футболу в Україні тимчасово призупинився. Логістичні труднощі та мобілізація гравців змусили клуби переорієнтуватися на розвиток флаг-футболу — олімпійської версії гри, щоб зберегти культуру спорту та продовжити його розвиток у Львові та по всій країні." data-lang-en="Unfortunately, due to the full-scale invasion, the development of American football in Ukraine was temporarily suspended. Logistical difficulties and mobilization of players forced clubs to reorient themselves to the development of flag football — the Olympic version of the game, in order to preserve the culture of the sport and continue its development in Lviv and throughout the country.">
+                            На жаль, через повномасштабне вторгнення розвиток американського футболу в Україні тимчасово призупинився. Логістичні труднощі та мобілізація гравців змусили клуби переорієнтуватися на розвиток флаг-футболу — олімпійської версії гри, щоб зберегти культуру спорту та продовжити його розвиток у Львові та по всій країні.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <h3>LVIV LIONS</h3>
+                <p data-lang-ua="&copy; 2026 Lviv Lions. Всі права захищені." data-lang-en="&copy; 2026 Lviv Lions. All rights reserved.">&copy; 2026 Lviv Lions. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -161,12 +161,17 @@ html {
 .nav-menu {
     display: none;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width: 768px) {
     .nav-menu {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -174,12 +179,13 @@ html {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: var(--transition);
-    letter-spacing: 1px;
-    padding: 0.5rem 1rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0.5rem;
     border-radius: 4px;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-menu a::after {
@@ -1014,11 +1020,11 @@ section {
 
 .instagram-video {
     width: 100%;
-    height: 100%;
+    height: 150%;
     object-fit: cover;
-    object-position: 30% 40%;
+    object-position: center center;
     position: absolute;
-    top: 0;
+    top: -25%;
     left: 0;
 }
 
@@ -1138,14 +1144,17 @@ section {
 .female-team-tile,
 .male-team-tile,
 .youtube-tile,
-.flag-football-tile {
+.flag-football-tile,
+.american-football-tile {
     padding: 0;
 }
 
 .female-team-tile .feed-image,
 .male-team-tile .feed-image,
 .youtube-tile .feed-image,
-.flag-football-tile .feed-image {
+.flag-football-tile .feed-image,
+.american-football-tile .feed-image,
+.instagram-tile .feed-image {
     height: 100%;
     min-height: 250px;
     position: relative;
@@ -1156,7 +1165,9 @@ section {
     .female-team-tile .feed-image,
     .male-team-tile .feed-image,
     .youtube-tile .feed-image,
-    .flag-football-tile .feed-image {
+    .flag-football-tile .feed-image,
+    .american-football-tile .feed-image,
+    .instagram-tile .feed-image {
         min-height: 280px;
     }
 }
